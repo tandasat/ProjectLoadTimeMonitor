@@ -38,16 +38,6 @@ namespace ProjectLoadTimeMonitor
             SolutionEvents.OnAfterOpenProject += HandleAfterOpenProjectEvent;
 
             //
-            // FIXME: I was unable to make this pattern work:
-            //  ThreadHelper.JoinableTaskFactory.Run(async delegate {
-            //      await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-            //      DoSomething();
-            //  });
-            // The DoSomething part did not get executed for some reasons.
-            //
-            //ThreadHelper.ThrowIfNotOnUIThread(k_ExtensionName);
-
-            //
             // Get the OutputWindow for logging.
             //
             var paneGuid = VSConstants.OutputWindowPaneGuid.GeneralPane_guid;

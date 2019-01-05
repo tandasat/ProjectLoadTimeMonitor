@@ -14,7 +14,7 @@ This extension measures time needed to complete load of each project, and output
 Examples
 ---------
 
-The results are displayed on the Output Window in the chronological order once all projects are loaded as show below.
+The results are displayed on the Output Window as show below once all projects are loaded.
 
 ![OutputWindow](/Images/ExampleOutput.png)
 
@@ -23,13 +23,17 @@ Here is another example results taken from a real-world solution which consisted
 ![SlowProjects](/Images/SlowProjects.png)
 
 
+On Visual Studio 2019
+----------------------
+
+On Visual Studio 2019, the extension is unable to measure time for the solution that is loaded at the first time for the Visual Studio instance. An user must open any solution first, and then, open the target solution to measure its load time.
+
+This is due to the changes of the requirements Microsoft made for the Visual Studio extensions. For more details of this change, see a blog article at The Visual Studio Blog below:
+  - [Improving the responsiveness of critical scenarios by updating auto load behavior for extensions](https://blogs.msdn.microsoft.com/visualstudio/2018/05/16/improving-the-responsiveness-of-critical-scenarios-by-updating-auto-load-behavior-for-extensions/)
+
+
 Supported Platforms
 --------------------
-- Visual Studio 2017
+- Visual Studio 2017 ([Download](https://marketplace.visualstudio.com/items?itemName=SatoshiTanda.ProjectLoadTimeMonitor))
+- Visual Studio 2019 ([Download](https://marketplace.visualstudio.com/items?itemName=SatoshiTanda.ProjectLoadTimeMonitor2))
 
-
-Download
----------
-
-- Visual Studio Marketplace
-  - https://marketplace.visualstudio.com/items?itemName=SatoshiTanda.ProjectLoadTimeMonitor
